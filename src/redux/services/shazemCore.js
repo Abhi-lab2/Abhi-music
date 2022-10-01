@@ -4,11 +4,10 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 // const options = {
 //   method: 'GET',
 //   headers: {
-//     'X-RapidAPI-Key': '071e7f6362msh3292352e4d5cf24p16f6cfjsn6ae5f141f561',
+//     'X-RapidAPI-Key': 'd1bf7d9275msha7a284bed78832ap1f0a31jsn2bb6b21b55c1',
 //     'X-RapidAPI-Host': '',
 //   },
 // };
-
 // fetch('https://shazam-core.p.rapidapi.com/v1/charts/world', options)
 //   .then((response) => response.json())
 //   .then((response) => console.log(response))
@@ -22,7 +21,7 @@ export const shazamCoreApi = createApi({
     prepareHeaders: (headers) => {
       headers.set(
         'X-RapidAPI-Key',
-        '071e7f6362msh3292352e4d5cf24p16f6cfjsn6ae5f141f561',
+        'd1bf7d9275msha7a284bed78832ap1f0a31jsn2bb6b21b55c1',
       );
 
       return headers;
@@ -41,4 +40,10 @@ export const shazamCoreApi = createApi({
   }),
 });
 
-export const { useGetTopChartsQuery } = shazamCoreApi;
+export const { useGetTopChartsQuery,
+  useGetSongsByGenreQuery,
+  useGetSongsByCountryQuery,
+  useGetSongsBySearchQuery,
+  useGetArtistDetailsQuery,
+  useGetSongDetailsQuery,
+  useGetSongRelatedQuery } = shazamCoreApi;
