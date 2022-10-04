@@ -7,4 +7,4 @@ music player app
 mobile, tablet friendly app
 
 Tech Stacks 
-React, Redux-toolkit, Tailwind-CSS
+React, Redux-toolkit, Tailwind-CSS, Swiper-react
